@@ -1,0 +1,14 @@
+pragma solidity 0.6.4;
+contract FirstApplication {
+    /*This is my first Solidity Application*/
+    uint public number_a = 10;
+    uint public number_b = 20;
+    function theadder() public view returns (uint){
+        uint counter = number_a + number_b;
+        while (counter > 0) {
+            counter-=1;
+            break;        
+        }
+        return 1;
+    }
+}
