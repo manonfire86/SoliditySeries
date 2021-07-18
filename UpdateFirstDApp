@@ -1,0 +1,25 @@
+pragma solidity 0.6.4;
+contract FirstApplication {
+    /*This is my first Solidity Application*/
+    uint public number_a = 10;
+    uint public number_b = 20;
+    uint counter = number_a + number_b;
+    
+    function getCounter() public view returns(uint){
+        return counter;
+    }
+    
+    function setCounter(uint Newnumber_a, uint Newnumber_b) public {
+        number_a = Newnumber_a;
+        number_b = Newnumber_b;
+        counter = number_a + number_b;
+    }
+
+    function theadder() public payable returns (uint){
+        while (counter > 0) {
+            counter-=1;
+            break;        
+        }
+        return 1;
+    }
+}
