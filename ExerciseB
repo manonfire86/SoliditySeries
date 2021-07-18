@@ -1,0 +1,6 @@
+pragma solidity 0.6.4;
+contract kamy {
+    //Hello World;
+    uint public number_a = 10;
+    uint internal number_b = 20;
+}
